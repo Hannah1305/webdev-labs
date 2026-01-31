@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="en">
     <head>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Lato&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #FFEAC2;
+            }
+            h1{
+                text-align: center;
+            }
+            h1, h2 {
+                background-color: #B41825;
+                color: #272753;
+                font-family: "Domine";
+            }
+            .menu-item{
+                display: flex;
+                justify-content: space-between;
+                max-width: 300px; 
+                font-family: "Lato";
+            }
+            .menu-item span, p{
+                color: #272753;
+            }
+            .navbar ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+            }
+            .navbar li {
+                margin: 0 15px;
+                font-family: "Lato";
+            }
+            .navbar a {
+                text-decoration: none;
+                color:#272753;
+            }
+            .footer{
+                color:#272753;
+                font-family:"Lato";
+            }
+        </style>
+        <title>Restaurant Menu</title>
+        <meta charset="UTF-8">
     </head>
     <body>
+        <h1>Byte & Bite Menu</h1>
 
+        <nav class="navbar">
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#bookings">Make a Booking</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <h2>Snacks</h2>
+        <p class="menu-item">
+            <span>Small Salad</span>
+            <span>£3.50</span> 
+        </p>
+        <p class="menu-item">
+            <span>Mac and Cheese</span>
+            <span>£5.00</span>
+        </p>
+        <p class="menu-item">
+            <span>Chicken Nuggets</span>
+            <span>£5.00</span>
+        </p>
+        <p class="menu-item">
+            <span>Chicken Wings</span>
+            <span>£4.50</span>
+        </p>
+
+        <h2>Burgers</h2>
+        <p class="menu-item">
+            <span>The Original</span>
+            <span>£9.50</span>  
+        </p>
+        <p class="menu-item">
+            <span>The Computer Scientist</span>
+            <span>£11.00</span>
+        </p>
+        <p class="menu-item">
+            <span>The Digital Media</span>
+            <span>£10.50</span> 
+        </p>
+        <p class="menu-item">
+            <span>The Hacker Special</span>
+            <span>£14.00</span>
+        </p>
+
+        <h2>Dishes</h2>
+        <p class="menu-item">
+            <span>Mushroom Chicken Pasta</span>
+            <span>£11.00</span> 
+        </p>
+        <p class="menu-item">
+            <span>Chicken Green Curry</span>
+            <span>£12.00</span>
+        </p>
+        <p class="menu-item">
+            <span>Roasted Vegetables and Pesto Pasta</span>
+            <span>£10.00</span>
+        </p>
+
+        <h2>Desserts</h2>
+        <p class="menu-item">
+            <span>Ice Cream</span>
+            <span>£4.00</span>
+        </p>
+        <p class="menu-item">
+            <span>Chocolate Brownies</span>
+            <span>£4.50</span> 
+        </p>
+        <p class="menu-item">
+            <span>Eton Mess</span>
+            <span>£4.00</span> 
+        </p>
     </body>
+    <br>
     <footer>
-
+        <p class="footer">Byte & Bite | 123 Foodie Lane, Flavor Town | 📞 01234 567890 | ✉️ info@byteandbite.com</p>
+        <p class="footer">Mon-Fri: 9am-9pm | Sat-Sun: 11am-11pm</p>
     </footer>
 </html>
