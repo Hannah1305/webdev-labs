@@ -1,6 +1,9 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: #FDF0D5;
+    color: #261447;
+    font-family:"Montserrat", sans-serif;
 }
 
 body {
@@ -12,7 +15,21 @@ main {
     flex: 1;
 }
 
+h2{
+    color:#EB6F99; 
+}
+
+.navigation{
+    text-align: center;
+}
+
+.site-header{
+    text-align: center;
+    background-color:#EB6F99;
+}
+
 .footer {
     text-align: center;
     padding: 20px;
+    background-color: #EB6F99;
 }
