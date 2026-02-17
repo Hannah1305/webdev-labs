@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Hannah Robertson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+       <h1>Portfolio Page</h1>
+    </header>
+    
+    <main>
+        <nav class="navigation">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Projects</a>
+        </nav>
+
+        <section class="portfolio-grid">
+            <article class="portfolio-card">
+                <img src="projectnova.jpg" alt="Battleships style grid">
+                <h3>Project Nova</h3>
+                <button class="toggle-btn">Details</button>
+                <p class="description" style="display: none;">
+                    A battleships style game built in Java. This was my final project during semester 1 for my Software Design and Development module. This was a solo project where I designed and created a 2 person game with a grid-based board. Creatures would be hidden on the board and the other player had to make guesses where they were hiding. 
+                </p>
+            </article>
+
+            <article class="portfolio-card">
+                <img src="plants.jpg" alt="Variety of plants">
+                <h3>Plant Species Database</h3>
+                <button class="toggle-btn">Details</button>
+                <p class="description" style="display: none;">
+                    This project was the first Java assessment I completed during semester 1 for my Software Design and Development module. This was a solo project where we created a database to store information about different plant species. Plants could be added, sorted by different criteria and searched for by the user.
+                </p>
+            </article>
+
+            <article class="portfolio-card">
+                <img src="advHproject.jpg" alt="Books with different school subjects">
+                <h3>Subject Quiz</h3>
+                <button class="toggle-btn">Details</button>
+                <p class="description" style="display: none;">
+                    This is the project I designed and built in Advanced Higher Computer Science during my final year of secondary school. The game contained quizzes about different school subjects, questions were randomly generated from a bank and users were able to pick an answer from 3 multi-choice options. The quiz was self marking and I created a leaderboard that users could sort depending on category and score.
+                </p>
+            </article>
+
+            <article class="portfolio-card">
+                <img src="simon-says.png" alt="Simon says game with coloured buttons">
+                <h3>Simon Says Game</h3>
+                <button class="toggle-btn">Details</button>
+                <p class="description" style="display: none;">
+                    During this group project, we created a Simon Says style memory game. We connected a webpage and an RGB LED. The light will flash and the useer must click the corresponding button on the webpage. Their score will increase and decrease depending on whether the user is correct or not. There is a maximum of 10 points then the user wins. 
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p>There are several ways to contact me:</p>
+            <p>Email: 2680460@dundee.ac.uk</p>
+            <p>Phone: 07890123456</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const card = this.closest('.portfolio-card');
+                const description = this.nextElementSibling;
+                if (description.style.display === 'none') {
+                    description.style.display = 'block';
+                    card.classList.add('expanded');
+                    this.textContent = 'Hide';
+                } else {
+                    description.style.display = 'none';
+                    card.classList.remove('expanded');
+                    this.textContent = 'Details';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html> 
+
